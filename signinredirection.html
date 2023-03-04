@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" name="fm" method="post">
+        <fieldset>
+            <legend style="text-align: center;">Candidate Registration</legend>
+            <label>First Name :</label>
+            <input type="text" name="fn" placeholder="first name"><br><br>
+            <label>Last Name :</label>
+            <input type="text" name="ln" placeholder="last name"><br><br>
+            <label>Date of Birth :</label>
+            <input type="date" name="dob" placeholder="mm/dd/yyyy">
+            <br><br>
+            <label>Gender :</label>
+            <input type="radio" name="gend " value="male">Male</input>
+            <input type="radio" name="gend " value="Female">Female</input>
+            <button type="button" onclick="valid()">submit</button>
+        </fieldset>
+    </form>
+    <script>
+
+        function valid() {
+            //  alert("working");
+            var name = document.fm.fn.value;
+            var last = document.fm.ln.value;
+           var db = document.fm.dob.value;
+            
+          //  document.write(name);
+            if (name == '') {
+                 alert("enter your name");
+ 
+             }
+             else if (last == ''){
+                 alert("enter your last name");
+ 
+             }
+             else if(db == ''){
+                 alert("enter your date of birth in mm/dd/yyyy");
+ 
+             }
+             else{
+            var bdate= new Date(db);
+             var diff= Date.now() - bdate.getTime();
+             var day = (diff/31536000000).toFixed(0);
+             alert(day);
+            }
+
+            if(day>=18){
+                alert(name+"you are eligible to vote");
+            }
+            else{
+                alert(name+"your are not eligible to vote wait to reach 18 years");
+            }
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+    </script>
+</body>
+
+</html>

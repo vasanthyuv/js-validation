@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .detail {
+            margin-left: 100px;
+            color: cornflowerblue;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+
+        }
+    </style>
+    <script>
+
+        document.write('<h1 style="text-align:center;color:blue">personal detail</h1>');
+    </script>
+</head>
+
+<body>
+    <div class="detail">
+
+        <script>
+            function disp() {
+                var name = "vasanth";
+                document.write("name:" + name + '<br><br>');
+
+                let dob = "07/10/2001";
+                document.write("Dob:" + dob + '<br><br>');
+
+                const age = 21;
+                document.write("age:" + age + '<br><br>');
+
+                branch = "computer application";
+                document.write("branch:" + branch);
+            }
+
+
+
+        </script>
+        <input type="button" onclick="disp()" value="click here">
+    </div>
+    <script src="javascript.js"></script>
+    <p> enter a number:</p>
+    <input type="text" id="num" placeholder="enter a number">
+    <input type="button" onclick="perfect(num)" value="check for perfect number">
+
+    <input type="button" onclick="fibo(num)" value="check for fibonacci series">
+    <input type="button" onclick="factorial(num)" value="check for factorial"><br><br>
+
+
+    <input type="text" id="gen" placeholder="enter your gender">
+    <input type="button" onclick="gender(gen)" value="check the gender">
+    <input type="button" onclick="switch1(gen)" value="check the gender in switch case">
+    <!--form-->
+
+    <form name='fm' method="post" onsubmit="form()">
+        <fieldset>
+            <legend style=text-align:center;>
+                REGISTRATION FORM
+            </legend>
+
+            <label>user name</label>
+            <input type="text" name="uname" required placeholder="uname">
+            <br><br>
+
+            <label>user email</label>
+            <input tye="email" name="email" placeholder="email">
+            <br><br>
+
+
+
+            <label>pasword</label>
+            <input type="password" name="pass" placeholder="password">
+            <input type="checkbox" value="YES" NAME="pass"><label>REMEMBER password</label>
+            <br><br>
+
+
+
+            <label>gender</label>
+            <input type="radio" name="gender" value="MALE">MALE
+            <input type="radio" name="gender" value="FEMALE">FEMALE
+            <br><br>
+
+
+
+            <label>ADDRESS</label>
+            <textarea name="addre"></textarea>
+            <br><br>
+
+
+
+            <label>dob</label>
+            <input type="date" name="dob" placeholder="dob"><br><br>
+
+            <label>MOBILE NO</label>
+            <input type="number" name="num" pattern="[0-9]{10}" placeholder="mobile no">
+            <br><br>
+            <label>telephone num</label><br>
+            <input type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}" placeholder="telephone num">
+            <br><br>
+            <label> SELECT PROFESSION</label>
+            <select id="prof" name="porfession">
+
+                <optgroup label="DEVELOPER">
+                    <option>front end developer</option>
+                    <option>back end developer</option>
+                    <option>cyber security analyst</option>
+                </optgroup>
+            </select>
+
+            <br><br>
+
+            <button type="submit">submit</button>
+
+
+
+
+        </fieldset>
+        <div>
+    </form>
+
+
+
+    <input type="text" id="name" placeholder="enter your name">
+    <input type="button" value="add at the begining" onclick="inbeg()">
+    <input type="button" value="insert at tha end" onclick="friends()">
+   
+    <input type="button" value="delete at the begning" onclick="dbeg()">
+    <input type="button" value="delete at the " onclick="dend()">
+    <input type="button" value="sort" onclick="sorting()">
+
+    <input type="button" value="print using for each" onclick="foreach1()">
+    <input type="button" value="print using for of loop" onclick="forof()">
+    <input type="button" value="print using for in loop" onclick="forin()">
+    <input type="button" value="get current date" onclick="date1()">
+
+
+
+</body>
+
+</html>
